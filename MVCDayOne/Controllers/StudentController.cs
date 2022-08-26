@@ -17,7 +17,7 @@ namespace MVCDayOne.Controllers
         //priorty 1 Form , 2 Route , 3 Query // send data from view to controller
         //model binder allows mapping HTTP request data with a model
 
-
+        ITIContext context = new ITIContext();
         public ViewResult index()
         {
             return View();
@@ -35,6 +35,13 @@ namespace MVCDayOne.Controllers
             ViewBag.name = s.Name;
             ViewBag.age = s.Age;
 
+            return View();
+        }
+
+        public ViewResult Dispaly()
+        {
+            List<Student> students = context.Students.ToList();
+            ViewBag.st=students;      
             return View();
         }
 
