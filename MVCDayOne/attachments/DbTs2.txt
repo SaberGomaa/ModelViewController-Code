@@ -1,0 +1,26 @@
+use Company_SD ;
+go
+
+select * from Employee
+
+select Fname ,Lname  ,Salary , Dno from Employee
+
+select Pname , Plocation, 
+(select Dname  from Departments where Departments.Dnum = Project.Dnum ) as DeptName
+from Project
+
+select SSN , Fname + ' '+Lname as FullName from Employee
+where Salary > 1000 
+
+select SSN , Fname + ' '+Lname as FullName from Employee
+where Salary*12 > 10000
+
+select  Fname + ' '+Lname as FullName ,Salary from Employee
+where Sex = 'F'
+
+select SSN , Fname  from Employee
+where Superssn = 968574 
+
+select Pnumber, Pname , Plocation
+from Project
+where Dnum = 10 

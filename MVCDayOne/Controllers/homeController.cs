@@ -71,8 +71,11 @@ namespace MVCDayOne.Controllers
                 return Content("saber");
             else if (id == 2)
                 return new EmptyResult();
-            else if(id==3)
-                return Json(students , JsonRequestBehavior.AllowGet);
+            else if (id == 3)
+                return Json(students, JsonRequestBehavior.AllowGet);
+            else if (id == 4)
+                return File("/attachments/DbTs2.txt", "text/plain");//mime types
+
 
             else
                 return View();
