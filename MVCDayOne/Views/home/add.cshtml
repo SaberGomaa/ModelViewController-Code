@@ -12,10 +12,18 @@
 </head>
 <body>
     <div>
+        <!-- #region name -->
         @* viewdata can read from viewbag  and vice versa *@
-        <h1>@ViewData["id"]</h1>
+        @*<h1>@ViewData["id"]</h1>
         <h1>@ViewData["name"]</h1>
-        <h1>@ViewBag.age</h1>
+        <h1>@ViewBag.age</h1>*@
+
+        <!-- #endregion -->
+
+        <h1>@Model.id</h1>
+        <h1>@Model.name</h1>
+        <h1>@Model.age</h1>
+
 
     </div>
 </body>

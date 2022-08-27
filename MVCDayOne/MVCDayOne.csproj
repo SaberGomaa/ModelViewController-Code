@@ -110,6 +110,7 @@
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\ITIContext.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\studentdata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

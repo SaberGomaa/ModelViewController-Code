@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCDayOne.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -24,15 +25,23 @@ namespace MVCDayOne.Controllers
 
         #endregion
 
-        public ViewResult add(int id, string name, int age)
+        #region MyRegion
+        //public ViewResult add(int id, string name, int age)
+        //{
+        //    // Dictionary
+
+        //    ViewData["id"] = id;
+        //    ViewData["name"] = name;
+        //    ViewData["age"] = age;
+
+        //    return View();
+        //} 
+        #endregion
+
+        public ViewResult add(studentdata sd)
         {
-            // Dictionary
-
-            ViewData["id"] = id;
-            ViewData["name"] = name;
-            ViewData["age"] = age;
-
-            return View();
+            return View(sd);
         }
+
     }
 }
