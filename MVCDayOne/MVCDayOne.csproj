@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="attachments\AI_L2.pdf" />
     <None Include="packages.config" />
     <Content Include="Views\test\about.cshtml" />
     <Content Include="Views\test\contact.cshtml" />

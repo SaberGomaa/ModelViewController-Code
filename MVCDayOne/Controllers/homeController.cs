@@ -75,6 +75,8 @@ namespace MVCDayOne.Controllers
                 return Json(students, JsonRequestBehavior.AllowGet);
             else if (id == 4)
                 return File("/attachments/DbTs2.txt", "text/plain");//mime types
+            else if(id == 5)
+                return File("/attachments/AI_L2.pdf", "application/pdf");//mime types
 
 
             else
