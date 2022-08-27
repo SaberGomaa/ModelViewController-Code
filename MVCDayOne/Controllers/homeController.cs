@@ -38,9 +38,44 @@ namespace MVCDayOne.Controllers
         //} 
         #endregion
 
-        public ViewResult add(studentdata sd)
+        //public ViewResult add(studentdata s)
+
+        //{
+        //    var q = new homestudents() { fullname = s.name, age = s.age , location = s.Address };
+        //    return View(q);
+        //}
+
+        public ViewResult add()
         {
-            return View(sd);
+            ITIContext context = new ITIContext();
+
+            List<Student> students = context.Students.ToList();
+            List<Department> departments = context.Departments.ToList();
+
+            studentdept sd = new studentdept() { students= students , departments = departments };
+
+            return View(sd);  
+        }
+
+        public ActionResult test(int id)
+        {
+            List<studentdata> students = new List<studentdata>()
+            {
+                new studentdata{name = "saber" , age = 22 , Address = "egy"},
+                new studentdata{name = "maher" , age = 22 , Address = "egy"},
+                new studentdata{name = "eman" , age = 22 , Address = "egy"},
+
+            };
+
+            if (id == 1)
+                return Content("saber");
+            else if (id == 2)
+                return new EmptyResult();
+            else if(id==3)
+                return Json(students , JsonRequestBehavior.AllowGet);
+
+            else
+                return View();
         }
 
     }

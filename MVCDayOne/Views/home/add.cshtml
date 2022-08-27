@@ -1,5 +1,8 @@
 ﻿@* strong typed view *@
-@model MVCDayOne.Models.studentdata
+
+@model MVCDayOne.Models.studentdept
+
+
 
 @{
     Layout = null;
@@ -21,12 +24,36 @@
         <h1>@ViewBag.age</h1>*@
 
         <!-- #endregion -->
+        <!-- #region name -->
+        @*<h1>@Model.fullname</h1>
+        <h1>@Model.location</h1>
+        <h1>@Model.age</h1>*@
 
-        <h1>@Model.id</h1>
-        <h1>@Model.name</h1>
-        <h1>@Model.age</h1>
+        <!-- #endregion -->
 
+        <div style="display:block">
+            <table style="text-align:center ; border:2px solid black">
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>age</th>
+                    <th>Department</th>
 
+                </tr>
+
+                @{
+                    foreach (var item in Model.students)
+                    {
+                        <tr >
+                            <td style="text-align:center ; border:2px solid black">@item.Name</td>
+                            <td style="text-align:center ; border:2px solid black">@item.Address</td>
+                            <td style="text-align:center ; border:2px solid black">@item.Age</td>
+                            <td style="text-align:center ; border:2px solid black">@item.Department.Name</td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
     </div>
 </body>
 </html>
