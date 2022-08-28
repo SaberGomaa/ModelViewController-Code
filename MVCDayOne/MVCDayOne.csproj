@@ -103,6 +103,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\homeController.cs" />
+    <Compile Include="Controllers\operationController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\testController.cs" />
     <Compile Include="Global.asax.cs">
@@ -127,6 +128,8 @@
     <Content Include="Views\Student\Dispaly.cshtml" />
     <Content Include="Views\home\Index.cshtml" />
     <Content Include="Views\home\add.cshtml" />
+    <Content Include="Views\Shared\_layout.cshtml" />
+    <Content Include="Views\operation\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

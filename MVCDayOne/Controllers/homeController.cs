@@ -73,7 +73,6 @@ namespace MVCDayOne.Controllers
             //    new studentdata{name = "saber" , age = 22 , Address = "egy"},
             //    new studentdata{name = "maher" , age = 22 , Address = "egy"},
             //    new studentdata{name = "eman" , age = 22 , Address = "egy"},
-
             //};
 
             if (id == 1)

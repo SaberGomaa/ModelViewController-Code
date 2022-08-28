@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_layout</title>
+</head>
+<body>
+    <div>
+        <div style="height:200px ;background-color:#2d2d2d">
+            header
+        </div>
+
+        <div style="height:500px ;background-color:#949494">
+            @RenderBody()
+        </div>
+
+        <div style="height:200px ;background-color:#2d2d2d">
+            footer
+        </div>
+    </div>
+</body>
+</html>
