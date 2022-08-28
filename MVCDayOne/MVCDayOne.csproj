@@ -119,7 +119,6 @@
     <Content Include="content\assets\vendors\jquery\jquery-3.4.1.slim.min.js" />
     <Content Include="content\assets\vendors\themify-icons\css\themify-icons.css" />
     <Content Include="content\assets\vendors\themify-icons\fonts\themify.svg" />
-    <Content Include="content\index.html" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
