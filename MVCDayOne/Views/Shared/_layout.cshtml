@@ -12,6 +12,7 @@
 </head>
 <body>
     <div>
+        @RenderSection("top")
         <div style="height:200px ;background-color:#2d2d2d">
             header
         </div>
@@ -23,6 +24,7 @@
         <div style="height:200px ;background-color:#2d2d2d">
             footer
         </div>
+        @RenderSection("mysection")
     </div>
 </body>
 </html>
